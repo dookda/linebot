@@ -1,0 +1,27 @@
+{
+  "name": "linebot",
+  "version": "1.0.0",
+  "description": "line bot",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dookda/linebot.git"
+  },
+  "keywords": [
+    "line",
+    "bot"
+  ],
+  "author": "sakda homhuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dookda/linebot/issues"
+  },
+  "homepage": "https://github.com/dookda/linebot#readme",
+  "dependencies": {
+    "@line/bot-sdk": "^7.3.0",
+    "express": "^4.17.1"
+  }
+}
