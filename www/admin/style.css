@@ -1,6 +1,4 @@
-#map {
-    height: 100%;
-  }
+
   
   /* Optional: Makes the sample page fill the window. */
   html,
@@ -8,4 +6,8 @@
     height: 100%;
     margin: 0;
     padding: 0;
+  }
+
+  #map {
+    height: 450px;
   }

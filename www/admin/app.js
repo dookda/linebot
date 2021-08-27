@@ -21,16 +21,25 @@ function initMap() {
             map: map
         })
 
-        calcRoute(a);
+        // calcRoute(a);
     })
-
 }
 
+let endPoint;
+function chkList() {
+    let name = localStorage.getItem('name');
+    let lat = localStorage.getItem('lat');
+    let lng = localStorage.getItem('lng');
+
+    $("#list").val(`${name} (${lat}, ${lng})`)
+    endPoint = new google.maps.LatLng(lat, lng)
+    // calcRoute(endPoint)
+}
 
 let marker;
-function calcRoute(latlng) {
-    var start = latlng;
-    var end = new google.maps.LatLng(18.796164912103464, 98.99381316034643);
+function calcRoute() {
+    var start = new google.maps.LatLng(18.796164912103464, 98.99381316034643);
+    var end = endPoint;
 
     var request = {
         origin: start,
